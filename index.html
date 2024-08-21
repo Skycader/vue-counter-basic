@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Vue Basics</title>
+    <link rel="stylesheet" href="theme.css" />
+  </head>
+  <body>
+    <div class="container pt-5" id="app">
+      <div class="card center">
+        <h1>
+          Счетчик: {{counter}}<sup>2</sup> =
+          {{counter*counter}}
+        </h1>
+        <div>
+          <button
+            class="btn primary"
+            v-on:click="counter++"
+          >
+            Добавить
+          </button>
+          <button class="btn danger" v-on:click="counter--">
+            Вычесть
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="vue.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
